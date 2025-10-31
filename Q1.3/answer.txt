@@ -1,0 +1,15 @@
+OK - my answer is that this is not stable.
+
+Think about this example
+
+Partition 2: Set1 = {1, 3}, Set2 = {2, 4}
+Schedule1: [1, 3] score: [False, False]
+Schedule2: [2, 4] score: [True, True]
+summary: Schedule1 wins 0 times, Schedule2 wins 2 times
+Schedule1: [1, 3] score: [False, True]
+Schedule2: [4, 2] score: [True, False]
+summary: Schedule1 wins 1 times, Schedule2 wins 1 times
+
+Network 1 always can make a small change to win 1 slot
+If they do then network 2 can always make a small change to win 2 slots
+
